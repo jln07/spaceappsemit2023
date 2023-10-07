@@ -8,26 +8,18 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>Welcome to [AppName]</h2>
+      <p>[AppName] helps you explore factors impacting climate change in your area, and take action to help preserve your environment.</p>
+      <ul>
+        <li>Learn about NASA's EMIT mission to improve climate models and measure greenhouse gases</li>
+        <li>Learn about missions by other space agencies around the world investigating Earth's climate</li>
+        <li>Explore your local climate including greenhouse gas sources, air quality, [EPA stuff?]</li>
+        <li>EcoHacks</li>
+        <li>Advocacy</li>
+      </ul>
+      <hr />
+      <h2>What is EMIT?</h2>
+      <p></p>
     </>
   )
 }
