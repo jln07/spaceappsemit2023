@@ -2,8 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Link} from "react-router-dom";
-import Map from './Map';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +13,7 @@ function App() {
       <ul>
         <li>Learn about NASA's EMIT mission to improve climate models and measure greenhouse gases</li>
         <li>Learn about missions by other space agencies around the world investigating Earth's climate</li>
-        <li>Explore your local climate including <Link to='Map'>greenhouse gas sources</Link>, air quality, [EPA stuff?]</li>
+        <li>Explore your local climate including greenhouse gas sources, air quality, [EPA stuff?]</li>
         <li>EcoHacks</li>
         <li>Advocacy</li>
       </ul>
