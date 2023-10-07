@@ -20,7 +20,7 @@ function App() {
       <hr />
       <h2>What is EMIT?</h2>
       <p>The EMIT instrument is a NASA-developed imaging spectrometer used in space missions. It measures light in visible and infrared wavelengths to determine the mineral composition of surfaces. By capturing over 100,000 spectra per second, it creates detailed maps of Earth's mineral composition.      </p>
-        <img src={".src/assets/EMIT_itself.png"}
+        <img src={".src/assets/EMIT_itself.png"}>
     </>
   )
 }
