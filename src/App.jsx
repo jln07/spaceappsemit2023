@@ -8,25 +8,19 @@ function App() {
 
   return (
     <>
-    <h2>Welcome to [AppName]</h2>
-<p>[AppName] helps you explore factors impacting climate change in your area, and take action to help preserve your environment.</p>
-<ul>
-    <a href="/AboutEmit/">Learn about NASA's EMIT mission to improve climate models and measure greenhouse gases</a>
-
-
-<p1>EMIT Mission</p1>
-
-
-    <li>Learn about missions by other space agencies around the world investigating Earth's climate</li>
-
-    <li>Explore your local climate including greenhouse gas sources, air quality, [EPA stuff?]</li>
-
-    <li>EcoHacks</li>
-
-    <li>Advocacy</li>
-</ul>
-<br/>
-<h2>What is EMIT?</h2>
+      <h2>Welcome to [AppName]</h2>
+      <p>[AppName] helps you explore factors impacting climate change in your area, and take action to help preserve your environment.</p>
+      <ul>
+        <li>Learn about NASA's EMIT mission to improve climate models and measure greenhouse gases</li>
+        <li>Learn about missions by other space agencies around the world investigating Earth's climate</li>
+        <li>Explore your local climate including greenhouse gas sources, air quality, [EPA stuff?]</li>
+        <li>EcoHacks</li>
+        <li>Advocacy</li>
+      </ul>
+      <hr />
+      <h2>What is EMIT?</h2>
+      <p></p>
+      <iframe src="https://earth.jpl.nasa.gov/emit-mmgis-lb/?s=tw5xp/"></iframe>
     </>
   )
 }
