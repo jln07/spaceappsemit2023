@@ -8,13 +8,14 @@ function App() {
 
   return (
     <>
-      <h2>Welcome to [GreenHaus]</h2>
-      <p>[GreenHaus] helps you explore factors impacting climate change in your area, and take action to help preserve your environment.</p>
+      <h2>Welcome to [AppName]</h2>
+      <p>[AppName] helps you explore factors impacting climate change in your area, and take action to help preserve your environment.</p>
       <ul>
         <li>Learn about NASA's EMIT mission to improve climate models and measure greenhouse gases</li>
         <li>Learn about missions by other space agencies around the world investigating Earth's climate</li>
-        <li>Explore your local climate including greenhouse gas sources and air quality</li>
+        <li>Explore your local climate including greenhouse gas sources, air quality, [EPA stuff?]</li>
         <li>EcoHacks</li>
+
         <li>Advocacy</li>
       </ul>
       <hr />
