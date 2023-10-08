@@ -1,3 +1,4 @@
+<body style="font-family: Calibri">
 <style>
     /* Add a black background color to the top navigation */
     .topnav {
@@ -35,5 +36,33 @@
     <a class="active" href="./action.html">Action</a>
     <a href="./advocacy.html">Advocacy</a>
 </div>
-<h1>Action</h1>
-<p>Details...</p>
+<h1>Take Action</h1>
+<p>Other parts of this site let you learn about EMIT and other Earth science missions, play with the data, and advocate for the change you want to see. On this page, connect with nonprofits engaged in environmental conservation and climate change mitigation in your local area, and find exciting volunteer opportunities!</p>
+
+<b>Enter a city and state</b>: <input type="text" id="location" /> <input type="button" id="search" value="Search" onclick="javascript:findLocation();"/>
+
+<br>
+<br>
+
+<iframe
+        id="mapView"
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyA6fIvfn2EnLQBHQBGdADXM9envlnDH7yA
+    &q=climate+nonprofit,Seattle+WA&center=47.6061,-122.3328&zoom=14">
+</iframe>
+
+<script>
+    function findLocation(){
+        var location=document.getElementById('location').value;
+        var newLocation="https://www.google.com/maps/embed/v1/search?key=AIzaSyA6fIvfn2EnLQBHQBGdADXM9envlnDH7yA&q=environmental+nonprofits+"+location;
+        document.getElementById("mapView").src=newLocation;
+        document.getElementById("mapView").reload(true);
+    }
+</script>
+
+</body>
