@@ -1,1 +1,70 @@
+<body style="font-family: Calibri">
+<style>
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
 
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: Calibri;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+</style>
+<div class="topnav">
+    <a class="active" href="./landing-spanish.html">Inicio</a>
+    <a href="./data-spanish.html">Datos</a>
+    <a href="./ecohacks-spanish.html">EcoHacks</a>
+    <a href="./action-spanish.html">Toma acción</a>
+    <a href="./advocacy-spanish.html">Apoya</a>
+</div>
+<h1>Toma medidas con organizaciones ambientales locales sin fines de lucro</h1>
+<p>Otras partes de este sitio te permiten aprender sobre EMIT y otras misiones científicas de la Tierra, jugar con los datos y abogar por el cambio que deseas ver. En esta página, conéctate con organizaciones sin fines de lucro involucradas en la conservación ambiental y la mitigación del cambio climático en su área local, ¡y encuentre interesantes oportunidades de voluntariado!</p>
+
+<b>Ingrese una ciudad y un estado</b>: <input type="text" id="location" /> <input type="button" id="search" value="Search" onclick="javascript:findLocation();"/>
+
+<br>
+<br>
+
+<!-- [Josh] The iframe below hard-codes an API Key for Google Maps Embed API which seems scary, but the Key is restricted to only work for that API, for which Google does not charge, so it's all good -->
+<!-- [Josh] I'll also delete this API Key once we wrap the project just for extra warm fuzzies-->
+<iframe
+        id="mapView"
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyA6fIvfn2EnLQBHQBGdADXM9envlnDH7yA
+    &q=climate+nonprofit,Seattle+WA&center=47.6061,-122.3328&zoom=14">
+</iframe>
+
+<script>
+    function findLocation(){
+        var location=document.getElementById('location').value;
+        var newLocation="https://www.google.com/maps/embed/v1/search?key=AIzaSyA6fIvfn2EnLQBHQBGdADXM9envlnDH7yA&q=environmental+nonprofits+"+location;
+        document.getElementById("mapView").src=newLocation;
+        document.getElementById("mapView").reload(true);
+    }
+</script>
+<hr noshade SIZE="10">
+</body>
